@@ -41,7 +41,7 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/felixcdr/tc2:latest
- deploy:
+  deploy:
     needs: verify-and-package
     runs-on: ubuntu-latest
     permissions:
